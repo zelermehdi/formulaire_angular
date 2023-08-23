@@ -3,14 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AjoutChatComponent } from './ajout-chat/ajout-chat.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddCatComponent } from './add-cat/add-cat.component'; 
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+  
+    AjoutChatComponent,
+       AddCatComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+<div>
+    <h2>Ajouter un chat</h2>
+    <form [formGroup]="catForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label>Nom du chat:</label>
+        <input type="text" formControlName="name" />
+      </div>
+      <div>
+        <label>Couleur:</label>
+        <input type="text" formControlName="color" />
+      </div>
+      <div>
+        <button type="submit" >Ajouter</button>
+      </div>
+    </form>
+  </div>
+  
